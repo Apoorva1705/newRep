@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+			input{
+				color:black;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="java.js"></script>
+	  	 <h2>select number of rows</h2>
+	        <div class="form-group"> 
+	            <select id ="form-control" style="width: 10%">
+					<option value="200">ALL Rows</option>
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="15">15</option>
+					<option value="20">20</option>
+					<option value="50">50</option>
+					<option value="70">70</option>
+					<option value="100">100</option>
+	            </select>
+		<div id="show"></div>
+		<div style="float: right">
+	        <h3>Search menu</h3>
+	        <input type="text" id="myInput" style="float:right"  onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+	    </div> 
+
+		<br/><br/>
+		<div class="pagination">
+			
+		</div>
+		<br/>
+		<table id="display" style="width: 100%">
+			<thead>
+				<tr>
+					<th onclick="sortTable(0)">UserID</th>
+					<th onclick="sortTable(1)">ID</th>
+					<th onclick="sortTable(2)">Title</th>
+					<th onclick="sortTable(3)">Completed</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+	</body>
+</html>
